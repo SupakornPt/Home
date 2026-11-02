@@ -1,0 +1,318 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HOME | Premium Real Estate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8ed",
+                        "inverse-surface": "#2f3034",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "surface-dim": "#d9dade",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f0f5",
+                        "outline": "#7e7576",
+                        "on-secondary-fixed": "#001b3e",
+                        "on-background": "#1a1c1f",
+                        "surface-container-highest": "#e2e2e7",
+                        "surface": "#f9f9fe",
+                        "background": "#f9f9fe",
+                        "on-secondary-fixed-variant": "#00458e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-bright": "#f9f9fe",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "secondary-fixed-dim": "#aac7ff",
+                        "on-tertiary-container": "#838486",
+                        "tertiary-fixed": "#e2e2e4",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#1a1c1d",
+                        "on-primary": "#ffffff",
+                        "secondary": "#005cba",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#002d61",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#000000",
+                        "primary": "#000000",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-tint": "#5e5e5e",
+                        "on-surface-variant": "#4c4546",
+                        "outline-variant": "#cfc4c5",
+                        "tertiary-fixed-dim": "#c6c6c8",
+                        "surface-variant": "#e2e2e7",
+                        "on-primary-container": "#848484",
+                        "on-surface": "#1a1c1f",
+                        "surface-container-low": "#f3f3f8",
+                        "secondary-container": "#5095fe",
+                        "primary-container": "#1b1b1b",
+                        "surface-container": "#ededf2",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#1b1b1b",
+                        "secondary-fixed": "#d7e3ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.019em", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.022em", "fontWeight": "600"}],
+                        "body-md": ["17px", {"lineHeight": "1.47", "letterSpacing": "-0.011em", "fontWeight": "400"}],
+                        "body-lg": ["19px", {"lineHeight": "1.5", "letterSpacing": "-0.011em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.021em", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .scale-down-click:active {
+            transform: scale(0.98);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9fe;
+            overflow-x: hidden;
+        }
+        /* Custom scrollbar for minimalist look */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e2e2e7; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-xl dark:bg-surface-dim/80 items-center px-margin-desktop py-4 w-full fixed top-0 z-50 shadow-sm grid grid-cols-3">
+<div class="flex items-center gap-4 justify-start">
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-low rounded-full transition-colors">search</button>
+</div>
+<div class="flex items-center justify-center">
+<h1 class="font-display-xl text-headline-lg md:text-headline-md tracking-tighter text-primary dark:text-inverse-on-surface font-black" style="opacity: 0;">HOME</h1>
+</div>
+<div class="flex items-center gap-4 justify-end">
+<span class="material-symbols-outlined text-primary cursor-pointer p-2 hover:bg-surface-container-low rounded-full transition-colors" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="relative pt-16 min-h-screen flex flex-col md:flex-row overflow-hidden">
+<!-- SideNavBar (Collapsible Sidebar) -->
+<!-- Main Content Area: 3D Model View (Significantly Larger) -->
+<section class="flex-1 ml-0 relative flex flex-col">
+<div class="h-[80vh] md:h-[85vh] relative group overflow-hidden bg-gradient-to-tr from-surface-container-low to-surface flex items-center justify-center px-4 md:px-12 py-8">
+<!-- 3D Interactive Display -->
+<div class="relative w-full h-full max-w-[1400px] flex items-center justify-center">
+<img alt="Luxury Modern Villa 3D Model" class="w-full h-full object-cover rounded-[32px] md:rounded-[48px] shadow-2xl transition-transform duration-1000 ease-out" data-alt="A hyper-realistic 3D architectural visualization of a minimalist luxury villa in a serene environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+<!-- 3D Controls HUD -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-4 glass bg-white/20 px-6 py-3 rounded-full border border-white/30 shadow-xl z-20">
+<button class="material-symbols-outlined text-primary hover:bg-white/40 p-2 rounded-full transition-colors" data-icon="rotate_left">rotate_left</button>
+<div class="h-4 w-[1px] bg-primary/20"></div>
+<span class="text-caption font-bold tracking-widest uppercase opacity-70">3D Interactive Mode</span>
+<div class="h-4 w-[1px] bg-primary/20"></div>
+<button class="material-symbols-outlined text-primary hover:bg-white/40 p-2 rounded-full transition-colors" data-icon="rotate_right">rotate_right</button>
+</div>
+<!-- Navigation Arrows -->
+<button class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass bg-white/40 flex items-center justify-center shadow-xl border border-white/50 hover:bg-white/60 transition-all scale-down-click z-10">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_back_ios">arrow_back_ios</span>
+</button>
+<button class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full glass bg-white/40 flex items-center justify-center shadow-xl border border-white/50 hover:bg-white/60 transition-all scale-down-click z-10">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</button>
+<!-- Floating Right Controls -->
+<div class="absolute right-6 top-6 flex flex-col gap-3 z-10">
+</div>
+</div>
+</div><div class="py-8 overflow-x-auto px-4 md:px-12">
+<div class="flex gap-4 items-center justify-start mx-auto w-full">
+<!-- Active Thumbnail -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border-2 border-secondary ring-2 ring-secondary/20 cursor-pointer shadow-md flex-1 min-w-[120px]">
+<img alt="Exterior view" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<!-- Thumbnail 2 -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-colors cursor-pointer flex-1 min-w-[120px]">
+<img alt="Pool side" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<!-- Thumbnail 3 -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-colors cursor-pointer flex-1 min-w-[120px]">
+<img alt="Living room" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<!-- Thumbnail 4 -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-colors cursor-pointer flex-1 min-w-[120px]">
+<img alt="Kitchen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<!-- Thumbnail 5 -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-colors cursor-pointer flex-1 min-w-[120px]">
+<img alt="Bedroom" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<!-- More Thumbnail -->
+<div class="flex-shrink-0 h-24 md:h-32 rounded-xl overflow-hidden border border-outline-variant/30 cursor-pointer relative group flex-1 min-w-[120px]">
+<img alt="More photos" class="w-full h-full object-cover brightness-[0.4] transition-all group-hover:brightness-[0.3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+<div class="absolute inset-0 flex items-center justify-center text-white font-headline-md">+19</div>
+</div>
+</div>
+</div>
+<!-- Property Details Section (Lowered) -->
+<div class="bg-surface p-12 space-y-10 z-30 pb-20">
+<!-- Top Row: Price & Location -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-primary/60 font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+                            Thonglor, Bangkok
+                        </div>
+<h2 class="font-display-xl text-headline-lg md:text-display-xl tracking-tighter">The Lumina Pavilion</h2>
+</div>
+<div class="text-right">
+<div class="text-on-surface-variant font-body-md opacity-60">Listing Price</div>
+<div class="font-headline-lg text-headline-lg text-secondary flex items-baseline gap-1">
+<span class="text-2xl">฿</span> 42,500,000
+                        </div>
+</div>
+</div>
+<!-- Middle Row: Icons and Specs -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4 py-8 border-y border-outline-variant/30">
+<div class="flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="house">house</span>
+<div class="text-center">
+<div class="text-caption uppercase font-bold text-primary/40">Type</div>
+<div class="font-label-sm">Detached</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="stairs">stairs</span>
+<div class="text-center">
+<div class="text-caption uppercase font-bold text-primary/40">Floors</div>
+<div class="font-label-sm">3 Levels</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="bed">bed</span>
+<div class="text-center">
+<div class="text-caption uppercase font-bold text-primary/40">Bedrooms</div>
+<div class="font-label-sm">4 Rooms</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="bathtub">bathtub</span>
+<div class="text-center">
+<div class="text-caption uppercase font-bold text-primary/40">Bathrooms</div>
+<div class="font-label-sm">5 Baths</div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="local_parking">local_parking</span>
+<div class="text-center">
+<div class="text-caption uppercase font-bold text-primary/40">Parking</div>
+<div class="font-label-sm">3 Slots</div>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Description & CTA -->
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-1 space-y-4">
+<button class="flex items-center gap-2 text-primary/70 hover:text-primary transition-all group font-label-sm uppercase tracking-widest scale-down-click">
+<span class="">architectural description</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">chevron_right</span>
+</button>
+</div>
+<div class="w-full md:w-auto">
+<button class="w-full md:w-64 bg-primary text-white py-6 rounded-2xl font-headline-md text-[18px] scale-down-click transition-all shadow-2xl flex items-center justify-center gap-3 group">
+                            Contact Agent
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Reduced Height) -->
+<div class="px-4 md:px-margin-desktop pb-8">
+<div class="max-w-container-max mx-auto glass bg-white/40 border border-white/50 rounded-2xl md:rounded-full shadow-lg p-4 md:px-8 md:py-4 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Previous Property -->
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="material-symbols-outlined text-primary/60 group-hover:text-primary transition-colors text-lg">arrow_back_ios</span>
+<div class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden flex-shrink-0 shadow-sm">
+<img alt="The Aria Residence" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold tracking-[0.2em] text-primary/40 uppercase">Previous Property</span>
+<span class="font-label-sm text-primary">The Aria Residence</span>
+</div>
+</div>
+<!-- Counter -->
+<div class="flex flex-col items-center">
+<div class="text-primary font-bold text-lg">
+<span class="text-primary">3</span>
+<span class="text-primary/30 mx-1">/</span>
+<span class="text-primary/30">12</span>
+</div>
+<span class="text-[10px] font-bold tracking-widest text-primary/40 uppercase">Properties</span>
+</div>
+<!-- Next Property -->
+<div class="flex items-center gap-4 group cursor-pointer text-right">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold tracking-[0.2em] text-primary/40 uppercase">Next Property</span>
+<span class="font-label-sm text-primary">The Horizon Estate</span>
+</div>
+<div class="w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden flex-shrink-0 shadow-sm">
+<img alt="The Horizon Estate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMobN9P3aC8dOeS2-GsRAI5ILIbaiKRwi5Cs-i0g6YsGUJUJllsEZwnmXEjVH_R083_1YOQIi2Pelnz2Iodw1H2ouCChwyT9-oVguoePDpBbfFevet0jl7SAZ7MFl1VJmwd_aNHQvSUP7ehJn-fWDUd0YiP0X2AjE8WTnwTCJ3D-WSZ9hwTVCDJ1HnwDVkPej86FJKVdOgjY8h_Fihq0jHJ5QLJ3-c5tQMTph3fTVJhUQ6EyUiUxHaXDn0BktzKnSGyRacqfqf6Dp">
+</div>
+<span class="material-symbols-outlined text-primary/60 group-hover:text-primary transition-colors text-lg">arrow_forward_ios</span>
+</div>
+</div>
+</div><footer class="bg-surface-container-lowest dark:bg-surface-dim w-full border-t border-outline-variant px-margin-desktop py-4 md:py-6">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-baseline gap-4">
+<div class="font-headline-md text-[20px] font-black text-primary">HOME</div>
+<p class="font-caption text-caption text-on-surface-variant opacity-50 hidden md:block">Elevating living standards since 2024.</p>
+</div>
+<nav class="flex gap-6">
+<a class="font-caption text-[11px] text-on-surface-variant hover:text-secondary transition-colors uppercase tracking-widest" href="#">Privacy</a>
+<a class="font-caption text-[11px] text-on-surface-variant hover:text-secondary transition-colors uppercase tracking-widest" href="#">Terms</a>
+<a class="font-caption text-[11px] text-on-surface-variant hover:text-secondary transition-colors uppercase tracking-widest" href="#">Support</a>
+</nav>
+<p class="font-caption text-[10px] text-on-surface-variant/40">© 2024 HOME Real Estate.</p>
+</div>
+</footer>
+<!-- Initial Glass Loader -->
+<div class="fixed inset-0 z-[100] glass bg-white/60 flex items-center justify-center pointer-events-none transition-opacity duration-1000 opacity-0" id="loader">
+<h1 class="font-display-xl text-display-xl tracking-tighter text-primary">HOME</h1>
+</div>
+
+
+</body></html>

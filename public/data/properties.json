@@ -1,0 +1,86 @@
+[
+  {
+    "id": "prop-tropical",
+    "title": "Tropical House",
+    "price": 3850000,
+    "currency": "USD",
+    "beds": 4,
+    "baths": 4,
+    "areaSqm": 410,
+    "addressLine": "42 Palm Crest Drive",
+    "city": "Honolulu",
+    "features": [
+      "Open lanai living",
+      "Tropical garden courtyard",
+      "Floor-to-ceiling glazing",
+      "Pool terrace"
+    ],
+    "modelUrl": "/models/houses/tropical-house.glb",
+    "propertyType": "Detached",
+    "floors": 2,
+    "parkingSlots": 2,
+    "listingDescription": "A breezy two-storey tropical residence with deep overhangs, indoor-outdoor living, and a garden-framed pool terrace. Glazing and timber accents open the plan to palm shade and cross-ventilation.",
+    "seller": {
+      "name": "Maya Okada",
+      "company": "Pacific Rim Realty",
+      "email": "maya@example.com",
+      "phone": "+1 808 555 0134"
+    }
+  },
+  {
+    "id": "prop-modern",
+    "title": "Modern House",
+    "price": 4280000,
+    "currency": "USD",
+    "beds": 5,
+    "baths": 5,
+    "areaSqm": 480,
+    "addressLine": "1200 North Ridge",
+    "city": "Seattle",
+    "features": [
+      "Flat-roof modern volume",
+      "Floor-to-ceiling glass",
+      "Terrace swimming pool",
+      "Open-plan living"
+    ],
+    "modelUrl": "/models/houses/modern-house.glb",
+    "propertyType": "Detached",
+    "floors": 2,
+    "parkingSlots": 2,
+    "listingDescription": "A crisp contemporary villa with layered flat roofs, black aluminum openings, and a full-width glass living facade overlooking the pool terrace. Clean massing and open interiors define the modern silhouette.",
+    "seller": {
+      "name": "Jordan Lee",
+      "company": "Northwind Realty",
+      "email": "jordan@example.com",
+      "phone": "+1 206 555 0142"
+    }
+  },
+  {
+    "id": "prop-courtyard",
+    "title": "Courtyard House",
+    "price": 2650000,
+    "currency": "USD",
+    "beds": 4,
+    "baths": 3,
+    "areaSqm": 340,
+    "addressLine": "18 Cloister Walk",
+    "city": "Portland",
+    "features": [
+      "Central courtyard",
+      "Wrapped living wings",
+      "Private garden rooms",
+      "Covered outdoor dining"
+    ],
+    "modelUrl": "/models/houses/courtyard-house.glb",
+    "propertyType": "Detached",
+    "floors": 2,
+    "parkingSlots": 2,
+    "listingDescription": "A courtyard-centered home that folds living wings around a private outdoor room. Covered walks, garden light, and quiet enclosed spaces make daily life feel open yet sheltered.",
+    "seller": {
+      "name": "Sam Rivera",
+      "company": "Cascade Homes",
+      "email": "sam@example.com",
+      "phone": "+1 503 555 0199"
+    }
+  }
+]
